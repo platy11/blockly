@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Modified by platy11 (https://github.com/platy11) -->
 <html>
 <head>
   <meta charset="utf-8">
@@ -35,27 +36,27 @@ mixpanel.init("f930f250c8cbfb824cabd5403bf21eba");mixpanel.track("Page load")</s
       <td colspan=2>
         <table width="100%">
           <tr id="tabRow" height="1em">
-            <td id="tab_blocks" class="tabon">...</td>
+            <td id="tab_blocks" onclick="mixpanel.track(&quot;Blocks tab press&quot;)"class="tabon">...</td>
             <td class="tabmin">&nbsp;</td>
-            <td id="tab_javascript" class="taboff">JavaScript</td>
+            <td id="tab_javascript" onclick="mixpanel.track(&quot;JS tab press&quot;)" class="taboff">JavaScript</td>
             <td class="tabmin">&nbsp;</td>
-            <td id="tab_python" class="taboff">Python</td>
+            <td id="tab_python" onclick="mixpanel.track(&quot;Python tab press&quot;)" class="taboff">Python</td>
             <td class="tabmin">&nbsp;</td>
-            <td id="tab_php" class="taboff">PHP</td>
+            <td id="tab_php" onclick="mixpanel.track(&quot;PHP tab press&quot;)" class="taboff">PHP</td>
             <td class="tabmin">&nbsp;</td>
-            <td id="tab_lua" class="taboff">Lua</td>
+            <td id="tab_lua" onclick="mixpanel.track(&quot;Lua tab press&quot;)" class="taboff">Lua</td>
             <td class="tabmin">&nbsp;</td>
-            <td id="tab_dart" class="taboff">Dart</td>
+            <td id="tab_dart" onclick="mixpanel.track(&quot;Dart tab press&quot;)" class="taboff">Dart</td>
             <td class="tabmin">&nbsp;</td>
-            <td id="tab_xml" class="taboff">XML</td>
+            <td id="tab_xml" onclick="mixpanel.track(&quot;XML tab press&quot;)" class="taboff">XML</td>
             <td class="tabmax">
-              <button id="trashButton" class="notext" title="...">
+              <button id="trashButton" onclick="mixpanel.track(&quot;Clear button press&quot;)" class="notext" title="...">
                 <img src='../../media/1x1.gif' class="trash icon21">
               </button>
               <button id="linkButton" class="notext" title="...">
                 <img src='../../media/1x1.gif' class="link icon21">
               </button>
-              <button id="runButton" class="notext primary" title="...">
+              <button onclick="mixpanel.track(&quot;Run button press&quot;)" id="runButton" class="notext primary" title="...">
                 <img src='../../media/1x1.gif' class="run icon21">
               </button>
             </td>
