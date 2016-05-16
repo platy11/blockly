@@ -17,6 +17,8 @@
  * limitations under the License.
  */
 
+/*  Modified by platy11 ( https://github.com/platy11 ) */
+
 /**
  * @fileoverview JavaScript for Blockly's Code demo.
  * @author fraser@google.com (Neil Fraser)
