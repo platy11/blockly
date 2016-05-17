@@ -184,3 +184,7 @@ select {
 .blocklyHtmlInput {
   font-family: 'Roboto Mono' !important;
 }
+
+.goog-menuitem-content {
+  font-family: 'Roboto Mono' !important;
+}
