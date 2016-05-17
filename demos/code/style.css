@@ -120,6 +120,7 @@ td {
 pre.content {
   border: 1px solid #ccc;
   overflow: scroll;
+  font-family: 'Roboto Mono', monospace;
 }
 #content_blocks {
   padding: 0;
@@ -160,4 +161,8 @@ button {
 }
 .run {
   background-position: -42px 0px;
+}
+
+textarea {
+  font-family: 'Roboto Mono', monospace;
 }
