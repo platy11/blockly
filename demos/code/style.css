@@ -176,3 +176,7 @@ select {
 .blocklyTreeLabel {
   font-family: 'Roboto Mono', monospace !important;
 }
+
+.blocklyText {
+  font-family: 'Roboto Mono' !important;;
+}
