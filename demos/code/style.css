@@ -178,5 +178,9 @@ select {
 }
 
 .blocklyText {
-  font-family: 'Roboto Mono' !important;;
+  font-family: 'Roboto Mono' !important;
+}
+
+.blocklyHtmlInput {
+  font-family: 'Roboto Mono' !important;
 }
