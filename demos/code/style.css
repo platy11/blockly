@@ -1,3 +1,5 @@
+/* Modified by platy11 (https://github.com/platy11) */
+
 html, body {
   height: 100%;
 }
@@ -165,4 +167,8 @@ button {
 
 textarea {
   font-family: 'Roboto Mono', monospace;
+}
+
+select {
+  font-family: 'Roboto Mono';
 }
