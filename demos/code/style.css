@@ -4,7 +4,7 @@ html, body {
 
 body {
   background-color: #fff;
-  font-family: sans-serif;
+  font-family: 'Roboto Mono', monospace;
   margin: 0;
   overflow: hidden;
 }
@@ -61,7 +61,7 @@ button.notext {
 h1 {
   font-weight: normal;
   font-size: 140%;
-  margin-left: 5px;
+  margin-left: 10px;
   margin-right: 5px;
 }
 
