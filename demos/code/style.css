@@ -170,5 +170,9 @@ textarea {
 }
 
 select {
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono', monospace;
+}
+
+.blocklyTreeLabel {
+  font-family: 'Roboto Mono', monospace;
 }
