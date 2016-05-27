@@ -188,3 +188,7 @@ select {
 .goog-menuitem-content {
   font-family: 'Roboto Mono' !important;
 }
+
+button span {
+  font-size: smaller;
+}
