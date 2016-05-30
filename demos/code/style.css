@@ -171,6 +171,12 @@ button {
   background-image: url(ic_save_black_24dp_1x.png);
 }
 
+.load {
+  height: 21px;
+  width: 21px;
+  background-image: url(ic_folder_open_black_24dp_1x.png);
+}
+
 textarea {
   font-family: 'Roboto Mono', monospace;
 }
