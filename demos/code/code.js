@@ -453,8 +453,8 @@ Code.init = function() {
       var reader = new FileReader();
       
       reader.onload = function(){
-       var text = reader.result;
-        output.innerText = text;
+        var text = reader.result;
+        // output.innerText = text;
         var xmlText = text;
         var xmlDom = null;
         try {
