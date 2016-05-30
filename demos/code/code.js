@@ -437,6 +437,14 @@ Code.init = function() {
 
   // Lazy-load the syntax-highlighting.
   window.setTimeout(Code.importPrettify, 1);
+  
+  Code.bindClick('saveButton', function(a) {
+    var saveXmlDom = Blockly.Xml.workspaceToDom(Code.workspace);
+    var saveXmlText = Blockly.Xml.domToPrettyText(saveXmlDom);
+    
+    var saveBlob = new Blob([saveXmlText], {type: "text/xml;charset=utf-8"});
+    saveAs(saveBlob, "blockly.blocks");
+  })
 };
 
 /**
