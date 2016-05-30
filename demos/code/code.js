@@ -445,6 +445,40 @@ Code.init = function() {
     var saveBlob = new Blob([saveXmlText], {type: "text/blocks;charset=utf-8"});
     saveAs(saveBlob, "blockly.blocks");
   })
+  
+  Code.bindClick('loadButton', function(a) {
+    var openFile = function(event) {
+      var input = event.target;
+
+      var reader = new FileReader();
+      
+      reader.onload = function(){
+       var text = reader.result;
+        output.innerText = text;
+        var xmlText = text;
+        var xmlDom = null;
+        try {
+         xmlDom = Blockly.Xml.textToDom(xmlText);
+        } catch (e) {
+          window.alert('Your file was invalid. Please try again.')
+        }
+        if (xmlDom) {
+          Code.workspace.clear();
+          Blockly.Xml.domToWorkspace(xmlDom, Code.workspace);
+          document.getElementById('loadDiv').style.display = 'none';
+        }
+      };
+      
+      reader.readAsText(input.files[0]);
+    };
+
+    document.getElementById('filepicker').addEventListener('change', function(event) {
+   	  openFile(event)
+    })
+    
+    document.getElementById('loadDiv').style.display = 'block';
+    
+  })
 };
 
 /**
