@@ -480,7 +480,7 @@ Code.init = function() {
     
   })
   
-  history.pushState({}, "Blockly", "/blockly");
+  // history.pushState({}, "Blockly", "/blockly");
 };
 
 /**
