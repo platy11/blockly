@@ -479,6 +479,8 @@ Code.init = function() {
     document.getElementById('loadDiv').style.display = 'block';
     
   })
+  
+  history.pushState({}, "Blockly", "/blockly");
 };
 
 /**
