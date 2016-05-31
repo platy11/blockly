@@ -478,6 +478,10 @@ Code.init = function() {
     
     document.getElementById('loadDiv').style.display = 'block';
     
+    Code.bindClick('closeFileDialogButton', function(a) {
+      document.getElementById('loadDiv').style.display = 'none';
+    })
+    
   })
   
   setTimeout(function(){
