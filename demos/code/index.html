@@ -22,15 +22,15 @@ mixpanel.init("f930f250c8cbfb824cabd5403bf21eba");mixpanel.track("Page load")</s
   <script src="https://cdn.jsdelivr.net/filesaver.js/0.2/FileSaver.min.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/blob.js/0.1/BlobBuilder.min.js"></script> -->
   <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
-  <!--[if lte IE 9]><style>.ie { display: block !important; position: fixed; top: 0; left: 0; background-color: yellow;}</style><![endif]-->
+  <!--[if lte IE 9]><script>mixpanel.track('Old browser use')</script><style>.ie { display: block !important; position: fixed; top: 0; left: 0; background-color: yellow;}</style><![endif]-->
 </head>
 <body>
   <h1 class="ie" style="display:none">You are using a unsupported browser. Please switch to another browser to use this site.</h1>
   <div id="loadDiv" style="display:none;position:fixed;top:35px;left:35px;z-index:99;background-color:#eee;box-shadow:5px 5px 5px #222;border-radius:5px;">
     <p style="text-align: center; margin-top: 25px;">
       <div class="open">
-        <h1>Please select a file below:</h1>
-        <input type="file" id="filepicker" style="margin-left:7px"><br>
+        <h1>Please select a file below: <button id="closeFileDialogButton">x</button></h1>
+        <input type="file" id="filepicker" style="margin-left:7px" onclick="mixpanel.track(&quot;Open file picker press&quot;)"><br>
       </div>
     </p>
   </div>
@@ -41,7 +41,7 @@ mixpanel.init("f930f250c8cbfb824cabd5403bf21eba");mixpanel.track("Page load")</s
       </td>
       <td class="farSide">
         
-        <select id="languageMenu"></select>
+        <select id="languageMenu" onclick="mixpanel.track(&quot;Language drop-down press&quot;)"></select>
       </td>
     </tr>
     <tr>
@@ -62,10 +62,10 @@ mixpanel.init("f930f250c8cbfb824cabd5403bf21eba");mixpanel.track("Page load")</s
             <td class="tabmin">&nbsp;</td>
             <td id="tab_xml" onclick="mixpanel.track(&quot;XML tab press&quot;)" class="taboff">XML</td>
             <td class="tabmax">
-              <button id="loadButton" onclick="mixpanel.track(&quot;Load button press&quot;)" class="" title="...">
+              <button id="loadButton" onclick="mixpanel.track(&quot;Load button press&quot;)" class="" title="Open a blockly paroject">
                 <img src="../../media/1x1.gif" class="load">
               </button>
-              <button id="saveButton" onclick="mixpanel.track(&quot;Save button press&quot;)" class="" title="...">
+              <button id="saveButton" onclick="mixpanel.track(&quot;Save button press&quot;)" class="" title="Save your blockly project">
                 <img src="../../media/1x1.gif" class="save">
               </button>
               <button id="trashButton" onclick="mixpanel.track(&quot;Clear button press&quot;)" class="notext" title="...">
@@ -88,8 +88,8 @@ mixpanel.init("f930f250c8cbfb824cabd5403bf21eba");mixpanel.track("Page load")</s
     </tr>
   </table>
   <div id="content_blocks" class="content"></div>
-  <pre id="content_javascript" class="content"></pre>
-  <pre id="content_python" class="content"></pre>
+  <pre id="content_javascript" class="content"></pre>>
+  <pre id="content_python" class="content"></pre
   <pre id="content_php" class="content"></pre>
   <pre id="content_lua" class="content"></pre>
   <pre id="content_dart" class="content"></pre>
