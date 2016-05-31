@@ -480,7 +480,9 @@ Code.init = function() {
     
   })
   
-  // history.pushState({}, "Blockly", "/blockly");
+  setTimeout(function(){
+    history.pushState({}, "Blockly", "/blockly");
+  }, 1500)
 };
 
 /**
